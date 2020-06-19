@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: #E0E1E2 url("/img/brain-chip-icon.png") no-repeat fixed top right;
+  background-size: contain;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 12vh;
+  padding: .5rem;
+  padding-bottom: .7rem;
+  background-color: rgba(190, 201, 217, 0.95);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav__logo {
+  width: auto;
+  height: 60px;
+  margin-left: 30px;
+}
+
+.main-nav .main-menu {
+  height: 100%;
+  width: auto;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  list-style: none;
+}
+
+.main-nav .main-menu__menu-item {
+  margin: auto 20px;
+}
+
+.main-nav .main-menu__menu-item a {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.header__main {
+  font-family: "Oswald";
+}
+/*# sourceMappingURL=style.css.map */

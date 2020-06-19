@@ -1,0 +1,52 @@
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+
+body{
+    position: relative;
+    background:$grey url('/img/brain-chip-icon.png') no-repeat fixed top right;
+    background-size: contain;
+}
+.main-nav{
+    display:flex;
+    height: 12vh;
+    padding: .5rem;
+    padding-bottom: .7rem;
+    background-color: $blue-light;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width:100%;
+    &__logo{
+        width: auto;
+        height: 60px;
+        margin-left: 30px;
+    }
+    .main-menu{
+        height: 100%;
+        width: auto;
+        margin-right:20px;
+        display:flex;
+        justify-content: space-between;
+        align-content: center;
+        list-style: none;
+        &__menu-item{
+            margin: auto 20px;
+            a{
+                text-decoration: none;
+                font-family: $font-texts;
+                font-size: $font-titles-size;
+                color:$white;
+            }
+        }
+    }
+}
+.header{
+    &__main{
+        font-family: $font-titles-main;
+    }
+}
+
+.btn{
+    
+}
