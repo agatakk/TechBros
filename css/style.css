@@ -15,7 +15,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 12vh;
+  height: 85px;
   padding: .5rem;
   padding-bottom: .7rem;
   background-color: rgba(190, 201, 217, 0.95);
@@ -58,10 +58,41 @@ body {
   text-decoration: none;
   font-family: "Raleway";
   font-size: 28px;
-  color: #FFFFFF;
+  color: #34558B;
 }
 
 .header__main {
   font-family: "Oswald";
+}
+
+.btn {
+  background-color: #FF6F64;
+  border: 1px solid #FF6F64;
+  height: 45px;
+  width: 150px;
+  color: #FFFFFF;
+  font-family: "Merriweather";
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.3);
+          box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.3);
+  font-size: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: #E0E1E2;
+  border-color: #E0E1E2;
+  color: #FF6F64;
+  -webkit-box-shadow: 2px 2px 15px rgba(1, 1, 1, 0.3);
+          box-shadow: 2px 2px 15px rgba(1, 1, 1, 0.3);
+  cursor: pointer;
+}
+
+.main-header {
+  height: 55vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#899CBB), to(#34558B));
+  background: linear-gradient(#899CBB, #34558B);
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
