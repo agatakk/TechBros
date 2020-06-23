@@ -23,7 +23,7 @@ body{
     z-index: 10;
     &__logo{
         width: auto;
-        height: 60px;
+        height: 90px;
         margin-left: 30px;
     }
     .main-menu{
@@ -97,7 +97,7 @@ body{
         width:auto;
         height: auto;
         padding: 10px;
-        margin: 22vh auto auto 10vw;
+        margin: 22vh auto auto 15vw;
         display:grid;
         grid-template-columns: 33% 33% 34%;
         grid-template-rows: 33% 33% 1fr;
@@ -153,5 +153,21 @@ body{
         &__btn{
             margin-left: 150px;
         }
+    }
+}
+
+//SECTION LAST POST
+.latest-post{
+    height: 80vh;
+    background-color: rgba(255,255,255, 0.6);
+    padding: 3vh 3vw;
+    display: flex;
+    &__info{
+        background-color:$navy-main;
+        height: 80%;
+        width: 40%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column
     }
 }

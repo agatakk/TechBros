@@ -33,7 +33,7 @@ body {
 
 .main-nav__logo {
   width: auto;
-  height: 60px;
+  height: 90px;
   margin-left: 30px;
 }
 
@@ -131,7 +131,7 @@ body {
   width: auto;
   height: auto;
   padding: 10px;
-  margin: 22vh auto auto 10vw;
+  margin: 22vh auto auto 15vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 33% 33% 34%;
@@ -221,5 +221,28 @@ body {
 
 .main-header .call-to-action__btn {
   margin-left: 150px;
+}
+
+.latest-post {
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest-post__info {
+  background-color: #34558B;
+  height: 80%;
+  width: 40%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
