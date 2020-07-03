@@ -347,9 +347,17 @@ body {
   font-weight: 200;
 }
 
+.post-info__date-author--posts {
+  color: #FF6F64;
+}
+
 .post-info__icon {
   display: inline-block;
   margin-left: 5px;
+}
+
+.post-info__icon--posts {
+  color: #FF6F64;
 }
 
 .abstract {
@@ -384,5 +392,10 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+.latest-posts__details {
+  color: #FF6F64;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

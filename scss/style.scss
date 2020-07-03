@@ -186,7 +186,7 @@ body{
 //SECTION LAST POST
 .latest-post{
     height: 100%;
-    background-color: rgba(255,255,255, 0.6);
+    background-color: rgba(255,255,255,   0.6);
     padding: 3vh 3vw;
     grid-row: 1/2;
     grid-column: 2/3;
@@ -241,11 +241,17 @@ body{
         font-size: $font-subtitles-size;
         font-family: $font-subtitles;
         font-weight: 200;
+        &--posts{
+            color:$orange-main
+        }
 
     }
     &__icon{
         display: inline-block;
         margin-left: 5px;
+        &--posts{
+            color:$orange-main
+        }
     }
 }
 //latest post abstract
@@ -266,4 +272,8 @@ body{
 .latest-posts{
     grid-row: 2/3;
     grid-column: 2/3;
+    &__details{
+        color: $orange-main;
+        display: inline-block;
+    }
 }
