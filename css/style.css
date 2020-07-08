@@ -236,8 +236,8 @@ body {
   display: grid;
   -ms-grid-columns: 18% auto;
       grid-template-columns: 18% auto;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
 }
 
 .sidebar {
@@ -328,7 +328,7 @@ body {
   margin-top: 5vw;
 }
 
-.post-info__subtiltes {
+.post-info__subtitles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,6 +337,11 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.post-info__subtitles--posts {
+  text-align: center;
+  margin: 1.5rem 0;
 }
 
 .post-info__date-author {
@@ -392,10 +397,45 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.latest-posts__abstract {
+  width: 48%;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+}
+
+.latest-posts__title {
+  color: #34558B;
+  font-family: "Oswald";
+  font-size: 28px;
+  margin: .5rem;
+  line-height: 1.2;
 }
 
 .latest-posts__details {
-  color: #FF6F64;
   display: inline-block;
+}
+
+.latest-posts__par {
+  margin: 1.5rem .5rem;
+  line-height: 1.6;
+}
+
+.latest-posts__btn {
+  margin-left: 53%;
+  margin-bottom: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
