@@ -236,8 +236,8 @@ body {
   display: grid;
   -ms-grid-columns: 18% auto;
       grid-template-columns: 18% auto;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
 }
 
 .sidebar {
