@@ -157,7 +157,7 @@ body{
             line-height: 1.4;
         }
         &__btn{
-            margin-left: 150px;
+            margin-left: calc(45% - 150px);
         }
     }
 }
@@ -373,7 +373,48 @@ body{
 //footer
 
 .footer{
+    height: 30vh;
     background-color: $navy-main;
-    color: white;
-    padding: 1.5rem;
+    color: $grey;
+    padding: 2rem;
+    display:flex;
+    justify-content: space-around;
+    align-content: space-around ;
+    &__title{
+        font-family: $font-titles-main;
+        font-size: $font-subtitles-size;
+        margin-bottom: 1rem;
+    }
+    &__link-wrapper{
+        margin: .8rem 0;
+        transition: all .2s;
+        &:hover{
+            transform: translateY(-2px);
+        }
+    }
+    &__link{
+        font-family: $font-titles-main;
+        color: $grey;
+    }
+    &__address-link{
+        color:$grey;
+    }
+    &__know-us{
+        width: 30%;
+    }
+    &__know-us-par{
+        width: 60%;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+    &__find-us{
+        width: 7%;
+    }
+    &__icons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }

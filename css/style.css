@@ -5,6 +5,14 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   position: relative;
   background: #E0E1E2 url("/img/brain-chip-icon.png") no-repeat fixed top right;
@@ -226,7 +234,7 @@ body {
 }
 
 .main-header .call-to-action__btn {
-  margin-left: 150px;
+  margin-left: calc(45% - 150px);
 }
 
 .main {
@@ -513,8 +521,67 @@ body {
 }
 
 .footer {
+  height: 30vh;
   background-color: #34558B;
-  color: white;
-  padding: 1.5rem;
+  color: #E0E1E2;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.footer__title {
+  font-family: "Oswald";
+  font-size: 10px;
+  margin-bottom: 1rem;
+}
+
+.footer__link-wrapper {
+  margin: .8rem 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer__link-wrapper:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.footer__link {
+  font-family: "Oswald";
+  color: #E0E1E2;
+}
+
+.footer__address-link {
+  color: #E0E1E2;
+}
+
+.footer__know-us {
+  width: 30%;
+}
+
+.footer__know-us-par {
+  width: 60%;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.footer__find-us {
+  width: 7%;
+}
+
+.footer__icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
