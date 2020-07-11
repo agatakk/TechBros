@@ -97,7 +97,7 @@ body{
     align-items: center;
     justify-content: end;
     height: 80vh;
-    background: linear-gradient(rgba(67, 97, 145, 0.89), $navy-main);
+    background: linear-gradient(rgba(67, 97, 145, 0.7), $navy-main);
     color: $white;
     .header{
         width:auto;
@@ -417,4 +417,53 @@ body{
         justify-content: space-between;
     }
 
+}
+
+@media (max-width:320px){
+    .main-header, .footer{
+        width: 100%
+    }
+    .main-header{
+        flex-direction: column;
+    }
+    .header{
+        margin: 20vh auto auto 8vw;
+       & &__main{
+            font-size: 90px;
+        }
+       & &__subheader1{
+            font-size: 29px;
+        }
+       & &__subheader2{
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .latest-post{
+        flex-direction: column;
+       .post-info, .abstract{
+           width: 90%;
+
+       }
+       .post-info{
+           padding: 50px 20px;
+           &__title{
+               font-size: 24px;
+           }
+           &__subtitles{
+               margin-top: 1rem;
+               justify-content: space-between;
+           }
+           &__icon{
+               margin-left:0;
+           }
+       }
+       .abstract{
+           padding: 30px 10px;
+       }
+    }
 }
