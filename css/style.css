@@ -523,7 +523,7 @@ body {
 .footer {
   height: 30vh;
   background-color: #34558B;
-  color: #E0E1E2;
+  color: #6EBAF6;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,11 +553,11 @@ body {
 
 .footer__link {
   font-family: "Oswald";
-  color: #E0E1E2;
+  color: #6EBAF6;
 }
 
 .footer__address-link {
-  color: #E0E1E2;
+  color: #6EBAF6;
 }
 
 .footer__know-us {
@@ -627,32 +627,61 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .latest-post {
+  .main .latest-post {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .post-info, .abstract {
+  .main .post-info, .main .abstract {
     width: 90%;
   }
-  .post-info {
+  .main .post-info {
     padding: 50px 20px;
   }
-  .post-info__title {
+  .main .post-info__title {
     font-size: 24px;
   }
-  .post-info__subtitles {
+  .main .post-info__subtitles {
     margin-top: 1rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .post-info__icon {
+  .main .post-info__icon {
     margin-left: 0;
   }
-  .abstract {
+  .main .abstract {
     padding: 30px 10px;
+  }
+  .main .latest-posts {
+    padding: 1rem 0;
+  }
+  .main .latest-posts__abstract {
+    width: 85%;
+    margin-left: 0;
+  }
+  .main .latest-posts__par {
+    margin: 1.5rem 0;
+  }
+  .main .latest-posts__btn {
+    margin-left: 31%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .footer__know-us {
+    width: 100%;
+  }
+  .footer__info {
+    margin: 1rem 0;
+  }
+  .footer__find-us {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

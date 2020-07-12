@@ -375,7 +375,7 @@ body{
 .footer{
     height: 30vh;
     background-color: $navy-main;
-    color: $grey;
+    color: $blue;
     padding: 2rem;
     display:flex;
     justify-content: space-around;
@@ -394,10 +394,10 @@ body{
     }
     &__link{
         font-family: $font-titles-main;
-        color: $grey;
+        color: $blue;
     }
     &__address-link{
-        color:$grey;
+        color:$blue;
     }
     &__know-us{
         width: 30%;
@@ -452,29 +452,55 @@ body{
     .main{
         display: flex;
         flex-direction: column;
-    }
-    .latest-post{
-        flex-direction: column;
-    }
-    .post-info, .abstract{
-        width: 90%;
-
-    }
-    .post-info{
-        padding: 50px 20px;
-        &__title{
-            font-size: 24px;
+        .latest-post{
+            flex-direction: column;
         }
-        &__subtitles{
-            margin-top: 1rem;
-            justify-content: space-between;
+        .post-info, .abstract{
+            width: 90%;
+    
         }
-        &__icon{
-            margin-left:0;
+        .post-info{
+            padding: 50px 20px;
+            &__title{
+                font-size: 24px;
+            }
+            &__subtitles{
+                margin-top: 1rem;
+                justify-content: space-between;
+            }
+            &__icon{
+                margin-left:0;
+            }
         }
+        .abstract{
+            padding: 30px 10px;
+        }
+        .latest-posts{
+            padding: 1rem 0;
+            &__abstract{
+                width: 85%;
+                margin-left:0;
+            }
+            &__par{
+                margin: 1.5rem 0;
+            }
+            &__btn{
+                margin-left: 31%;
+            }
+        }
+     }
+     .footer{
+         flex-direction: column;
+         height: auto;
+         &__know-us{
+             width: 100%;
+         }
+         &__info{
+             margin: 1rem 0;
+         }
+         &__find-us{
+             width: 30%;
+         }
+     }
     }
-    .abstract{
-        padding: 30px 10px;
-    }
- }
     
