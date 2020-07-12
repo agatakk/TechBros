@@ -585,7 +585,7 @@ body {
           justify-content: space-between;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .main-header, .footer {
     width: 100%;
   }
@@ -595,18 +595,28 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header {
+  .main-header .header {
     margin: 20vh auto auto 8vw;
   }
-  .header .header__main {
-    font-size: 90px;
+  .main-header .header__main {
+    font-size: 80px;
   }
-  .header .header__subheader1 {
-    font-size: 29px;
+  .main-header .header__sub-header1 {
+    font-size: 20px;
   }
-  .header .header__subheader2 {
-    font-size: 36px;
-    letter-spacing: 2px;
+  .main-header .header__sub-header2 {
+    font-size: 31px;
+    letter-spacing: 3px;
+  }
+  .main-header .call-to-action {
+    margin: 0;
+  }
+  .main-header .call-to-action__par {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .main-header .call-to-action__btn {
+    margin: 0 auto;
   }
   .main {
     display: -webkit-box;
@@ -623,25 +633,25 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .latest-post .post-info, .latest-post .abstract {
+  .post-info, .abstract {
     width: 90%;
   }
-  .latest-post .post-info {
+  .post-info {
     padding: 50px 20px;
   }
-  .latest-post .post-info__title {
+  .post-info__title {
     font-size: 24px;
   }
-  .latest-post .post-info__subtitles {
+  .post-info__subtitles {
     margin-top: 1rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .latest-post .post-info__icon {
+  .post-info__icon {
     margin-left: 0;
   }
-  .latest-post .abstract {
+  .abstract {
     padding: 30px 10px;
   }
 }
