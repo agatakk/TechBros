@@ -64,6 +64,15 @@ body{
             width: 60%;
         }
     }
+    .menu-mobile{
+        display: none;
+        &__menu-item{
+            display: none;
+        }
+    }
+    .menu-hamburger{
+        display:none;
+    }
 }
 
 // BUTTONS
@@ -420,6 +429,20 @@ body{
 }
 
 @media (max-width:360px){
+    .main-nav{
+        .main-menu{
+            display: none;
+        }
+        .menu-hamburger{
+            display: block;
+            height: 20px;
+            width: 20px;
+            border: 1px solid $navy-main;
+        }
+        .menu-mobile{
+            display:none;
+        }
+    }
     .main-header, .footer{
         width: 100%
     }
