@@ -66,7 +66,7 @@ body{
     }
 
     .menu-hamburger{
-        display:none;
+        display:hidden;
         margin-right: 30px;
         &__line{
             height: 3px;
@@ -431,7 +431,7 @@ body{
 }
 @media screen and (max-width:768px){
     body{
-        overflow-x: hidden;
+        // overflow-x: hidden;
     }
     .main-nav{
         .main-menu{
@@ -447,13 +447,35 @@ body{
                 justify-content: center;
                 align-items: center;
                 transform: translateX(100%);
+                transition: all .3s ease-in;
+                &__menu-item{
+                    opacity: 0;
+                }
           }
        
           .menu-hamburger{
               display: block;
+              cursor: pointer;
           }
        }
     }
+    .main-nav{
+
+        .nav-active{
+         transform: translateX(0%);       }
+    }
+
+    @keyframes navLinksFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
 
 @media (max-width:360px){
   
