@@ -481,15 +481,43 @@ body{
           .menu-hamburger{
               display: block;
               cursor: pointer;
+              &__line{
+                  transition: transform .2s ease-in;
+              }
           }
        }
     }
     .main-nav{
-
         .nav-active{
-         transform: translateX(0%);       }
+         transform: translateX(0%);}
+         .menu-hamburger {
+            &__line{
+                &:first-child.toggle{
+                    
+                    transform: rotate(-45deg) translate((-5px,6px));
+                }
+            
+            }
+            &__line{
+                &:nth-child(2).toggle{
+                    
+                    opacity: 0;
+                }
+            
+            }
+            &__line{
+                &:last-child.toggle{
+                    
+                    transform: rotate(45deg) translate((-5px,-6px));
+                }
+            
+            }
+         }
     }
 
+ 
+   
+    
     @keyframes navLinksFade{
         from{
             opacity: 0;

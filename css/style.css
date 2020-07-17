@@ -659,11 +659,31 @@ body {
     display: block;
     cursor: pointer;
   }
+  .main-nav .menu-hamburger__line {
+    -webkit-transition: -webkit-transform .2s ease-in;
+    transition: -webkit-transform .2s ease-in;
+    transition: transform .2s ease-in;
+    transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+  }
 }
 
 .main-nav .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.main-nav .menu-hamburger__line:first-child.toggle {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.main-nav .menu-hamburger__line:nth-child(2).toggle {
+  opacity: 0;
+}
+
+.main-nav .menu-hamburger__line:last-child.toggle {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @-webkit-keyframes navLinksFade {
