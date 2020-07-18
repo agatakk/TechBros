@@ -597,6 +597,36 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1920px) {
+  .main-header .header {
+    margin: 26vh auto auto 11vw;
+  }
+  .main-header .header__sub-header1 {
+    font-size: 35px;
+  }
+  .main-header .header__sub-header2 {
+    text-align: center;
+    margin-left: 1px;
+    font-size: 83px;
+  }
+  .main-header .header__main {
+    font-size: 215px;
+    font-weight: 500;
+  }
+  .main-header .call-to-action {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-header .call-to-action__par {
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
