@@ -905,18 +905,20 @@ body {
 }
 
 .main-header--post {
-  height: 40vh;
+  position: relative;
+  height: auto;
+  padding: 75px;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 768px) {
   .main-header--post {
-    height: 60vh;
+    padding: 120px 75px 75px 30px;
   }
 }
 
 @media (max-width: 414px) {
   .main-header--post {
-    height: 56vh;
+    padding: 120px 21px 75px 21px;
   }
 }
 
@@ -930,7 +932,7 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   .main-header .header--post {
     margin: 0;
   }
