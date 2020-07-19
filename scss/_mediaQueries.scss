@@ -1,0 +1,270 @@
+@import 'variables';
+@import 'fonts';
+@import 'utility';
+
+@media screen and (max-width:1920px){
+    .main-header{
+        .header{
+            margin: 26vh auto auto 11vw;
+            &__sub-header1{
+                font-size: 35px;
+            }
+            &__sub-header2{
+                text-align: center;
+                margin-left: 1px;
+                font-size: 83px;
+            }
+            &__main{
+                font-size: 215px;
+                font-weight: 500;
+            }
+        }
+        .call-to-action{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ }
+ 
+ @media screen and (max-width:768px){
+     body{
+         overflow-x: hidden;
+     }
+     .main-nav{
+ 
+         .main-menu{
+                 margin:0;
+                 position: absolute;
+                 right: 0;
+                 top: 84px;
+                 height: calc(100vh - 84px);
+                 width: 72.5vw;
+                 background-color: $blue-light;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                 transform: translateX(100%);
+                 transition: all .3s ease-in;
+                 &__link{
+                     height:100%;
+                     width: 100%;
+                 }
+                 &__menu-item{
+                     font-weight: 600;
+                     letter-spacing: 3px;
+                     font-size: 36px;
+                     opacity: 0;
+                     &--blog{
+                         width: 100%;
+                         height: 21%;
+                         margin-top: 0;
+                     }
+                     &--btn{
+                         width:100%;
+                         height:100%;
+                         color: $white;
+                         font-size: 36px;
+                         font-weight: 200;
+                         font-family: $font-titles-main;
+                         box-shadow: none;
+                         &:hover{
+                             color: $orange-main
+                         }
+                     }
+                 }
+           }
+        
+           .menu-hamburger{
+               display: block;
+               cursor: pointer;
+               &__line{
+                   transition: transform .2s ease-in;
+               }
+           }
+        }
+      
+        .main-header{
+            padding: 5rem;
+            justify-content: center;
+            height: auto;
+            .header{
+                margin:0;
+                margin-top: 15vh;
+            }
+            .call-to-action{
+                padding:0;
+                &__par{
+                 width: 100%;
+                }
+                &__btn{
+                    margin-left: calc(100% - 150px);
+                }
+            }
+        }
+        .main{
+         display: flex;
+         flex-direction: column;
+         .post-info{
+             padding: 47px;
+             &__subtitles{
+                 width: 100%;
+                 & div{
+                     margin-top: 15px;
+                 }
+             }
+            
+         }
+         .abstract{
+             padding: .85rem;
+             &__par{
+                 font-size: .85rem;
+                 line-height: 1.4;
+             }
+         }
+         .latest-post{
+             height: auto;
+             padding: 5vh 3vw;
+         }
+        }
+        .latest-posts{
+            &__btn{
+                margin-left:45%;
+            }
+        }
+     }
+     .main-nav{
+         .nav-active{
+          transform: translateX(0%);}
+          .menu-hamburger {
+             &__line{
+                 &:first-child.toggle{
+                     
+                     transform: rotate(-45deg) translate((-5px,6px));
+                 }
+             
+             }
+             &__line{
+                 &:nth-child(2).toggle{
+                     
+                     opacity: 0;
+                 }
+             
+             }
+             &__line{
+                 &:last-child.toggle{
+                     
+                     transform: rotate(45deg) translate((-5px,-6px));
+                 }
+             
+             }
+          }
+     }
+ 
+  
+ 
+     
+ @keyframes navLinksFade{
+         from{
+             opacity: 0;
+             transform: translateX(50px);
+         }
+         to{
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+     
+ 
+ @media (max-width:414px){
+    .main-nav{
+        .main-menu{
+         height: calc(80vh - 83px);
+        }
+    }
+     .main-header, .footer{
+         width: 100%;
+        
+     }
+     .main-header{
+         flex-direction: column;
+         padding: 5rem 0;
+         .header{
+            &__main{
+                 font-size: 85px;
+             }
+            &__sub-header1{
+                 font-size: 21px;
+                 font-weight: 400;
+             }
+            &__sub-header2{
+                 font-size: 31px;
+                 letter-spacing: 3px;
+             }
+         }
+         .call-to-action{
+             margin:0;
+             &__par{
+                 width: 100%;
+                 margin: 30px auto;
+             }
+             &__btn{
+                 margin: 0 auto;
+             }
+         }
+     }
+     .main{
+         
+         .latest-post{
+             flex-direction: column;
+         }
+         .post-info, .abstract{
+             width: 90%;
+     
+         }
+         .post-info{
+             padding: 50px 20px;
+             &__title{
+                 font-size: 24px;
+             }
+             &__subtitles{
+                 margin-top: 1rem;
+                 justify-content: space-around;
+             }
+             &__icon{
+                 margin-left:0;
+             }
+         }
+         .abstract{
+             padding: 30px 10px;
+         }
+         .latest-posts{
+             padding: 1rem 0;
+             &__abstract{
+                 width: 85%;
+                 margin-left:0;
+             }
+             &__par{
+                 margin: 1.5rem 0;
+             }
+             &__btn{
+                 margin-left: 31%;
+             }
+         }
+      }
+      .footer{
+          flex-direction: column;
+          height: auto;
+          &__know-us{
+              width: 100%;
+          }
+          &__info{
+              margin: 1rem 0;
+          }
+          &__find-us{
+              width: 30%;
+          }
+      }
+     }
+ 

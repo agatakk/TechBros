@@ -13,6 +13,21 @@ ul {
   list-style: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   position: relative;
   background: #E0E1E2 url("/img/brain-chip-icon.png") no-repeat fixed top right;
@@ -889,21 +904,6 @@ body {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 .main-header--post {
   height: 40vh;
 }
@@ -934,4 +934,32 @@ ul {
   text-align: center;
   margin-left: -15px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.main--post {
+  margin-top: -3vh;
+  position: relative;
+  z-index: 15;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.main .sidebar--post {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main .post-content {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=main.css.map */
