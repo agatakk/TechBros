@@ -168,6 +168,9 @@ body{
             font-size: $font-texts-size;
             margin: 20px;
             line-height: 1.4;
+            @media (min-width:1919px){
+                font-size: $font-titles-size;
+            }
         }
         &__btn{
             margin-left: calc(45% - 150px);
@@ -456,9 +459,6 @@ body{
            width: 50%;
            justify-content: center;
            align-items: center;
-           &__par{
-               font-size: $font-titles-size;
-           }
        }
    }
 }
@@ -625,13 +625,14 @@ body{
     }
     .main-header{
         flex-direction: column;
+        padding: 5rem 0;
         .header{
-            
            &__main{
-                font-size: 80px;
+                font-size: 85px;
             }
            &__sub-header1{
-                font-size: 20px;
+                font-size: 21px;
+                font-weight: 400;
             }
            &__sub-header2{
                 font-size: 31px;
