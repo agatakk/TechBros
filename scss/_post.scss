@@ -48,9 +48,68 @@
         }
     }
     .post-content{
+        margin: 0 4vw;
+        padding: 5vh 15vw;
         grid-area: 1/2/2/3;
         background-color:  rgba(255, 255, 255, 0.8);
         display: flex;
         flex-direction: column;
+        @include shadow;
+        &__article{
+            position: relative;
+            padding-bottom: 10vh;
+            height: auto;
+            margin-bottom: 5vh;
+            &::after{
+                content:"";
+                display: block;
+                height: 2px;
+                background-color:$orange-main;
+                position: absolute;
+                transform: translateX(30%);
+                width: 15%;
+                bottom: 0;
+            }
+        }
+        &__titles{
+            color: $orange-main;
+            font-size: $font-texts-size;
+            margin: 1rem 0;
+        }
     }
+    .post-info{
+        &__subtitles{
+            &--post-cont{
+                justify-content: flex-start;
+                position: relative;
+               
+            }
+        }
+        &__date-author{
+            &--post-cont{
+                color:$navy-main;
+                margin-bottom: 2vh;
+            }
+        }
+    }
+    .latest-posts{
+        &__details{
+            &--post-cont{
+                margin-right: 30px;
+                &::after{
+                    content:"";
+                    display: block;
+                    height: 2px;
+                    background-color:$orange-main;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 15%;
+                    margin-top: 5vw;
+                }
+            }
+        }
+      
+    }
+ 
 }
