@@ -9,6 +9,9 @@
        @media(max-width: 1380px){
            height: 60vh;
        }
+       @media(max-width:414px){
+        height: 56vh;
+        }   
     }
     .header{
         &--post{
@@ -16,11 +19,19 @@
             @media(max-width: 1380px){
                 margin: 20vh auto auto 15vh;
             }
+            @media(max-width:414px){
+                margin: 0;
+            }
+        
             
         }
         &__main{
+            
             &--post{
                 font-size: 125px;
+                @media(max-width:414px){
+                    font-size: 100px;
+                }
             }
         }
         &__sub-header2{
@@ -29,6 +40,9 @@
                 letter-spacing: 3px;
                 text-align: center;
                 margin-left: -15px;
+                @media(max-width:414px){
+                    font-size: 40px;
+                }
             }
         }
        
@@ -39,8 +53,11 @@
     &--post{
         margin-top: -3vh;
         position: relative;
-        z-index: 15;
+        z-index: 9;
         grid-template-rows: 1fr;
+        @media(max-width:414px){
+            margin-top: -5vh;
+        }
     }
     .sidebar{
         &--post{
@@ -55,6 +72,9 @@
         display: flex;
         flex-direction: column;
         @include shadow;
+        @media(max-width:414px){
+            margin-bottom: 2vh;
+        }
         &__article{
             position: relative;
             padding-bottom: 10vh;
