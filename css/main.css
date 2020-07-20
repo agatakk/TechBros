@@ -618,7 +618,7 @@ body {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1366px) {
   .main-header .header {
     margin: 26vh auto auto 11vw;
   }
@@ -714,6 +714,13 @@ body {
     transition: transform .2s ease-in, -webkit-transform .2s ease-in;
   }
   .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -726,6 +733,7 @@ body {
   }
   .main-header .call-to-action {
     padding: 0;
+    width: 50%;
   }
   .main-header .call-to-action__par {
     width: 100%;
@@ -816,15 +824,11 @@ body {
   .main-nav .main-menu {
     height: calc(80vh - 83px);
   }
-  .main-header, .footer {
-    width: 100%;
-  }
   .main-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding: 5rem 0;
+  }
+  .main-header .header {
+    margin-top: 10vh;
   }
   .main-header .header__main {
     font-size: 85px;
@@ -841,7 +845,7 @@ body {
     margin: 0;
   }
   .main-header .call-to-action__par {
-    width: 100%;
+    width: 63%;
     margin: 30px auto;
   }
   .main-header .call-to-action__btn {
@@ -905,36 +909,23 @@ body {
 }
 
 .main-header--post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: auto;
-  padding: 75px;
 }
 
-@media (max-width: 768px) {
-  .main-header--post {
-    padding: 120px 75px 75px 30px;
-  }
-}
-
-@media (max-width: 414px) {
-  .main-header--post {
-    padding: 120px 21px 75px 21px;
-  }
-}
-
-.main-header .header--post {
-  margin: 15vh auto auto 15vh;
-}
-
-@media (max-width: 1380px) {
-  .main-header .header--post {
-    margin: 20vh auto auto 15vh;
-  }
-}
-
-@media (max-width: 768px) {
+@media screen and (min-width: 1366px) {
   .main-header .header--post {
     margin: 0;
+    padding: 15vh;
   }
 }
 
