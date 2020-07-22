@@ -360,6 +360,9 @@ body{
     padding: 4rem;
     @include flex-center;
     flex-wrap: wrap;
+    &--archives{
+        grid-row: 1/3;
+    }
     &__abstract{
         width: 48%;
         padding: 1.5rem;

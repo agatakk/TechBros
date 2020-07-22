@@ -521,6 +521,12 @@ body {
       flex-wrap: wrap;
 }
 
+.latest-posts--archives {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
 .latest-posts__abstract {
   width: 48%;
   padding: 1.5rem;
