@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'fonts';
+@import 'utility';
+
+.main{
+    &--contact{
+        display: flex;
+        padding: 5vh 3vw;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    &__titles{
+        padding: 3vh 3vw;
+        margin-bottom: 5vh;
+        border-left: 2px solid $orange-main;
+    }
+    &__contact-title-sm{
+        font-size: 24px;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: $blue; 
+    }
+    
+    &__contact-title-big{
+        color: $navy-main;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Oswald';
+        font-weight: 200;
+    }
+    &__email{
+        padding: 1rem;
+        width: 70%;
+        transform: translateX(28%);
+        background-color: $blue-transparent;
+        font-size: 32px;
+        text-align: center;
+        &>a{
+            color: $navy-main;
+            font-weight: 600;
+        }
+    }
+}
+
+.contact-form{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    &__input{
+        padding: 1rem;
+        border: 1px solid $navy-main;
+        margin: 15px 0;
+        width: 100%;
+        background-color: rgba(255,255,255, .8);
+        &::placeholder{
+            font-family: 'Raleway';
+        }
+        &:focus{
+            border: 1px solid $orange-main;
+            outline:1px solid $orange-main;
+        }
+    }
+}

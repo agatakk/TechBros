@@ -1054,4 +1054,93 @@ body {
   width: 15%;
   margin-top: 5vw;
 }
+
+.main--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5vh 3vw;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__titles {
+  padding: 3vh 3vw;
+  margin-bottom: 5vh;
+  border-left: 2px solid #FF6F64;
+}
+
+.main__contact-title-sm {
+  font-size: 24px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #6EBAF6;
+}
+
+.main__contact-title-big {
+  color: #34558B;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-weight: 200;
+}
+
+.main__email {
+  padding: 1rem;
+  width: 70%;
+  -webkit-transform: translateX(28%);
+          transform: translateX(28%);
+  background-color: rgba(110, 186, 246, 0.2);
+  font-size: 32px;
+  text-align: center;
+}
+
+.main__email > a {
+  color: #34558B;
+  font-weight: 600;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.contact-form__input {
+  padding: 1rem;
+  border: 1px solid #34558B;
+  margin: 15px 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form__input::-webkit-input-placeholder {
+  font-family: 'Raleway';
+}
+
+.contact-form__input:-ms-input-placeholder {
+  font-family: 'Raleway';
+}
+
+.contact-form__input::-ms-input-placeholder {
+  font-family: 'Raleway';
+}
+
+.contact-form__input::placeholder {
+  font-family: 'Raleway';
+}
+
+.contact-form__input:focus {
+  border: 1px solid #FF6F64;
+  outline: 1px solid #FF6F64;
+}
 /*# sourceMappingURL=main.css.map */
