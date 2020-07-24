@@ -5,37 +5,58 @@
 .main{
     &--contact{
         display: flex;
+        flex-direction: column;
         padding: 5vh 3vw;
         width: 100%;
+        background-color: rgba(255,255,255, .4);
         justify-content: space-around;
         align-items: center;
+        @media screen and (min-width: 1024px){
+            flex-direction: row;
+        }
+       
     } 
+    &__contact-us{
+        margin-bottom: 3rem;
+    }
     &__titles{
         padding: 3vh 3vw;
         margin-bottom: 5vh;
+        background-color: white;
         border-left: 2px solid $orange-main;
+        
     }
     &__contact-title-sm{
-        font-size: 24px;
+        font-size: $font-texts-size;
         font-weight: 200;
         text-transform: uppercase;
         color: $blue; 
+        @media screen and (min-width: 1024px){
+            font-size: 24px;
+        }
     }
     
     &__contact-title-big{
         color: $navy-main;
-        font-size: 40px;
+        font-size: $font-titles-size;
         text-transform: uppercase;
         font-family: 'Oswald';
         font-weight: 200;
+        @media screen and (min-width: 1024px){
+            font-size: 40px;
+        }
     }
     &__email{
         padding: 1rem;
-        width: 70%;
-        transform: translateX(28%);
+        margin: 0 auto;
         background-color: $blue-transparent;
-        font-size: 32px;
         text-align: center;
+        font-size: $font-titles-size;
+        @media screen and (min-width: 1024px){
+            transform: translateX(28%);
+            width: 70%;
+            font-size: 32px;
+        }
         &>a{
             color: $navy-main;
             font-weight: 600;
@@ -46,7 +67,9 @@
 .contact-form{
     display:flex;
     flex-direction: column;
-    width: 30%;
+    @media screen and (min-width: 1024px){
+        width: 30%;
+    }
     &__input{
         padding: 1rem;
         border: 1px solid $navy-main;
