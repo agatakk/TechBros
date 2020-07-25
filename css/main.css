@@ -1200,10 +1200,25 @@ body {
 .main .concept {
   margin: 0 auto;
   padding: 2rem;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
-  width: 60%;
+  -webkit-transform: translateY(-13%);
+          transform: translateY(-13%);
   background-color: #FFFFFF;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .main .concept {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main .concept {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    width: 60%;
+  }
 }
 
 .main .concept__title {
@@ -1211,12 +1226,24 @@ body {
   font-size: 28px;
   color: #34558B;
   text-align: center;
+  padding: .5rem;
   margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .main .concept__title {
+    padding: 0;
+  }
 }
 
 .main .concept__par {
   line-height: 1.5;
-  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main .concept__par {
+    padding: 1rem;
+  }
 }
 
 .authors-about {
@@ -1227,9 +1254,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .authors-about {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1239,23 +1268,98 @@ body {
 }
 
 .authors-about__author {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 286px 1fr;
-      grid-template-rows: 286px 1fr;
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .authors-about__author {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    -ms-grid-rows: 350px 1fr;
+        grid-template-rows: 350px 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .authors-about__author {
+    width: 45%;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .authors-about__author {
+    width: 40%;
+  }
+}
+
 .authors-about__name {
+  margin: 0;
+  padding: .5rem;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1/1/2/2;
+  background-color: #34558B;
+  text-align: left;
+}
+
+.authors-about__name::after {
+  display: none;
+}
+
+.authors-about__title, .authors-about__email {
+  margin: 1rem;
+  font-weight: 200;
+}
+
+.authors-about__title {
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+.authors-about__title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.authors-about__email {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 10px;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .authors-about__img {
@@ -1264,6 +1368,20 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1/2/2/3;
+}
+
+.authors-about__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% top;
+     object-position: 35% top;
+}
+
+.authors-about__img--wk img {
+  -o-object-position: 25% 35%;
+     object-position: 25% 35%;
 }
 
 .authors-about__bio {
