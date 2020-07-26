@@ -1,0 +1,74 @@
+@import 'variables';
+@import 'fonts';
+@import 'utility';
+
+.content{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.search-bar{
+    --size: 40px;
+    border: 2px solid $white;
+    display: flex;
+    border-radius: 50px;
+    height: var(--size);
+    width: var(--size);
+    padding: 3px;
+    position: relative;
+    transition: width 200ms ease-in-out;
+    overflow: hidden;
+
+    &__input{
+        
+        width: 100%;
+        padding: 0 0.5rem;
+        border: 0;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        line-height: calc(var(--size) - 3px);
+        opacity: 0;
+        cursor: pointer;
+        &:focus{
+            outline:0;
+        }
+    }
+    &__submit{
+        position:relative;
+        z-index: 1;
+        font-size: 1rem;
+        color: $white;
+        background-color: $orange-main;
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+        width: calc(var(--size) - 10px);
+        height: calc(var(--size) - 10px);
+        margin-left: auto;
+        transition: background 250ms ease-in-out;
+
+        &:focus,
+        &:hover{
+            outline:0;
+            @include shadow;
+            
+        }
+    }
+    
+    // by doing focus on a child wi are changing the style of a parent
+    &:focus-within{
+        width: 100%;
+
+        .search-bar__input{
+            background-color: $white;
+            opacity: 1;
+            cursor: initial;
+        }
+        .search-bar__submit{
+            background-color: $blue;
+            
+        }
+    }
+}
