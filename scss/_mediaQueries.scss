@@ -2,10 +2,10 @@
 @import 'fonts';
 @import 'utility';
 
-@media screen and (min-width:1366px){
+@media screen and (min-width:1600px){
     .main-header{
         .header{
-            margin: 26vh auto auto 11vw;
+            // margin: 26vh auto auto 11vw;
             &__sub-header1{
                 font-size: 35px;
             }
@@ -20,11 +20,36 @@
             }
         }
         .call-to-action{
-            width: 50%;
-            justify-content: center;
+            width: 85%;
+            justify-content: flex-end;
             align-items: center;
         }
     }
+ }
+
+ @media screen and (max-width: 1024px){
+     .header{
+         .call-to-action{
+            padding: 0;
+            margin: 0;
+            &__par{
+                width:60%;
+            }
+         }
+     }
+     .main{
+        grid-template-columns: 25% auto;
+     }
+     .post-info{
+         &__subtitles{
+             width:100%;
+         }
+     }
+     .latest-posts{
+         &__btn{
+             margin-left: 20%;
+         }
+     }
  }
  
  @media screen and (max-width:768px){
@@ -91,9 +116,12 @@
             padding: 5rem;
             justify-content: center;
             height: auto;
+            .header-container{
+                margin-top: 84px;
+            }
             .header{
                 margin:0;
-                margin-top: 15vh;
+                // margin-top: 15vh;
             }
             .call-to-action{
                 padding:0;
@@ -180,7 +208,7 @@
      }
      
  
- @media (max-width:414px){
+ @media (max-width:768px){
     .main-nav{
         .main-menu{
          height: calc(80vh - 83px);
@@ -190,7 +218,7 @@
        
          padding: 5rem 0;
          .header{
-            margin-top: 10vh;;
+            // margin-top: 10vh;;
             &__main{
                  font-size: 85px;
              }
